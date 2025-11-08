@@ -1,0 +1,15 @@
+{
+  "name": "Ladder Proxy",
+  "description": "Basic ladder proxy extension",
+  "version": "1.0",
+  "manifest_version": 3,
+  "permissions": ["activeTab", "tabs"],
+  "host_permissions": ["http://localhost:8080/*"],
+  "action": {
+    "default_title": "Ladder Proxy",
+    "default_icon": "pigeon.png"
+  },
+  "background": {
+    "service_worker": "RunLadder.js"
+  }
+}
